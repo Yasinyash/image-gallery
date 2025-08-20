@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="yasin.css">
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animal')">animal</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <img src="images/nature.png" alt="Nature" class="gallery-img nature" onclick="openLightbox(this)">
+    <img src="images/city.png" alt="City" class="gallery-img city" onclick="openLightbox(this)">       
+    <img src="images/animal.png" alt="animal" class="gallery-img animal" onclick="openlightbox(this)">
+    <img src="images/nature2.png" alt="nature" class="gallery-img nature" onclick="openLightbox(this)">
+    <img src="images/city2.png" alt="city" class="gallery-img city" onclick="openlightbox(this)">
+    <img src="images/animal2.png" alt="animal" class="gallery-img animal" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-nav">
+      <span onclick="prevImage()">&#10094;</span>
+      <span onclick="nextImage()">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="yasin.js"></script>
+</body>
+</html>

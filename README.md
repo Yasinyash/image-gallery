@@ -1,2 +1,12 @@
 codeAlpha_image gallery
-This is a reponsive image gallery built using HTML,CSS,and javascript.it features a lightbox view,smooth transitions,and category-based filtering.The layout adjusts prefectly across devices of all screen size
+A simple and responsive image gallery with category based filtering using HTML,CSS and Javascript.Built as part of an internship project
+features Filter by nature,city,animal
+Hover effects and smooth transtitions
+Reponsive layout
+Teach stack HTML
+CSS
+javascript
+files index.html
+jas.css
+scrpt.js
+the responsive design for different screen sizes
